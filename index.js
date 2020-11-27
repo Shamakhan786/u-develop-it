@@ -1,6 +1,6 @@
 'use strict';
 
-const mysql = require('mysql');
+const mysql2 = require('mysql2');
 const inquirer = require('inquirer');
 require('console.table');
 
@@ -18,17 +18,17 @@ const promptMessages = {
     exit: "Exit"
 };
 
-const connection = mysql.createConnection({
+const connection = mysql2.createConnection({
     host: 'localhost',
 
-    // Your port; if not 3306
+    // Your port; if not 3000
     port: 3306,
 
     // Your username
     user: 'root',
 
     // Your password
-    password: 'chargers619',
+    password: 'Shama_1415',
     database: 'employees'
 });
 
